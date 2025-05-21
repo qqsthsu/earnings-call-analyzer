@@ -1,12 +1,19 @@
+<pre>
+```mermaid
 flowchart TD
-    A0[Start] --> A1[Read transcripts from folder]
-    A1[Read transcripts from folder] --> A2[Analyze Strategic Focus Areas]
-    A2[Analyze Strategic Focus Areas] --> A3[Extract Competitive Intelligence]
-    A3[Extract Competitive Intelligence] --> A4[Analyze Competitor Mentions]
-    A4[Analyze Competitor Mentions] --> A5[Analyze Business Segments]
-    A5[Analyze Business Segments] --> A6[Extract Growth Drivers]
-    A6[Extract Growth Drivers] --> A7[Create Visualizations]
-    A7[Create Visualizations] --> A8[Extract Executive Statements]
-    A8[Extract Executive Statements] --> A9[Generate Word Cloud]
-    A9[Generate Word Cloud] --> A10[Generate Summary & Save CSVs]
-    A10[Generate Summary & Save CSVs] --> A11[End]
+    A[Start] --> B[Read transcripts from /data/Elevance/*.txt]
+    B --> C[Analyze Strategic Focus Areas]
+    C --> D[Extract Competitive Intelligence]
+    D --> E[Extract Product, Strategy, Competitive Terms]
+    E --> F[Analyze Competitor Mentions]
+    F --> G[Analyze Business Segments]
+    G --> H[Extract Growth Drivers]
+    H --> I[Create Visualizations (5 charts)]
+    I --> J[Extract Executive Statements]
+    J --> K[Extract Strategic Initiatives (noun phrases)]
+    K --> L[Generate Global Word Cloud]
+    L --> M[Print & Save Top Insights]
+    M --> N[Save CSVs and PNGs]
+    N --> O[End]
+```
+</pre>
