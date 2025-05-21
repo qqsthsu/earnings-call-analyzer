@@ -7,4 +7,4 @@ flowchart TD
     E --> G[generate_summary]
     G --> H[Display in Streamlit]
     C --> H
-
+    ![App Pipeline](app_pipeline_diagram.png)
