@@ -1,5 +1,3 @@
-<pre>
-```mermaid
 flowchart TD
     A[Start] --> B[Read transcripts from /data/Elevance/*.txt]
     B --> C[Analyze Strategic Focus Areas]
@@ -15,5 +13,3 @@ flowchart TD
     L --> M[Print & Save Top Insights]
     M --> N[Save CSVs and PNGs]
     N --> O[End]
-```
-</pre>
