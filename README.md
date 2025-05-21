@@ -1,9 +1,8 @@
-flowchart TD
-    A[User uploads file] --> B[extract_text_from_file]
-    B --> C[extract_entities_and_financials]
-    B --> D[create_faiss_index]
-    D --> E[generate_swot]
-    E --> F[Save SWOT as JSON & PDF]
-    E --> G[generate_summary]
-    G --> H[Display in Streamlit]
-    C --> H
+gitGraph
+   commit id: "Initial commit"
+   commit id: "Add extract_text module"
+   commit id: "Add NER + financials"
+   commit id: "Create FAISS index"
+   commit id: "Generate SWOT"
+   commit id: "Generate summary"
+   commit id: "Add Streamlit UI"
