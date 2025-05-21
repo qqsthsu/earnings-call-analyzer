@@ -1,5 +1,3 @@
-<pre>
-```mermaid
 flowchart TD
     A[User uploads file] --> B[extract_text_from_file]
     B --> C[extract_entities_and_financials]
@@ -9,5 +7,3 @@ flowchart TD
     E --> G[generate_summary]
     G --> H[Display in Streamlit]
     C --> H
-```
-</pre>
