@@ -1,8 +1,14 @@
-gitGraph
-   commit id: "Initial commit"
-   commit id: "Add extract_text module"
-   commit id: "Add NER + financials"
-   commit id: "Create FAISS index"
-   commit id: "Generate SWOT"
-   commit id: "Generate summary"
-   commit id: "Add Streamlit UI"
+```mermaid
+flowchart TD
+    A0[Start] --> A1[Read transcripts from folder]
+    A1[Read transcripts from folder] --> A2[Analyze Strategic Focus Areas]
+    A2[Analyze Strategic Focus Areas] --> A3[Extract Competitive Intelligence]
+    A3[Extract Competitive Intelligence] --> A4[Analyze Competitor Mentions]
+    A4[Analyze Competitor Mentions] --> A5[Analyze Business Segments]
+    A5[Analyze Business Segments] --> A6[Extract Growth Drivers]
+    A6[Extract Growth Drivers] --> A7[Create Visualizations]
+    A7[Create Visualizations] --> A8[Extract Executive Statements]
+    A8[Extract Executive Statements] --> A9[Generate Word Cloud]
+    A9[Generate Word Cloud] --> A10[Generate Summary & Save CSVs]
+    A10[Generate Summary & Save CSVs] --> A11[End]
+```
